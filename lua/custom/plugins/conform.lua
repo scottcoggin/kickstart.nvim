@@ -1,3 +1,4 @@
+-- File: ~/.config/nvim/lua/custom/plugins/conform.lua
 return {
   'stevearc/conform.nvim',
   event = { 'BufWritePre' },
@@ -7,11 +8,10 @@ return {
     local formatters = {
       lua = { 'stylua' },
       python = { 'black', 'isort' },
-      terraform = { 'terraform_fmt' },
+      terraform = { 'terraform_fmt', 'tf_lint' },
       tex = { 'latexindent' },
     }
 
-    -- Optional: use full paths on Windows if needed
     if os.is_windows then
       formatters.python = {
         'C:/Users/scott/AppData/Roaming/Python/Python312/Scripts/black.exe',

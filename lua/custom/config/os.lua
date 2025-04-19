@@ -1,3 +1,5 @@
+-- File: ~/.config/nvim/lua/custom/config/os.lua
+
 local os_name = vim.uv.os_uname().sysname
 local M = {}
 
