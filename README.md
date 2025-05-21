@@ -1,11 +1,10 @@
+# Neovim Configuration
 
-# 🧠 Neovim Configuration
-
-This is a modular Neovim configuration based on **Kickstart.nvim** and managed with **lazy.nvim**. It includes tailored support for Python, Terraform, LaTeX, Git workflows, and modern developer tools.
+This is a modular Neovim configuration based on Kickstart.nvim and managed with lazy.nvim. It includes tailored support for Python, Terraform, LaTeX, Git workflows, and modern developer tools.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Modular plugin configuration via `lua/custom/plugins/`
 - LSP, autocompletion, formatting, Git, Treesitter, and more
@@ -14,7 +13,7 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 
 ---
 
-## 🔧 Plugin Highlights
+## Plugin Highlights
 
 | Plugin | Description |
 |--------|-------------|
@@ -30,10 +29,11 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 | `telescope.nvim` | Fuzzy finder |
 | `nvim-tree.lua` | File tree viewer |
 | `mini.nvim` | Minimal enhancements (surround, ai, statusline) |
+| `markdown-preview.nvim` | Live Markdown preview in your browser |
 
 ---
 
-## 🎨 UI
+## UI
 
 - Colorscheme: `tokyonight-night`
 - Statusline: `lualine` with filetype, branch, and filename
@@ -41,9 +41,9 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 
 ---
 
-## 🧠 Keymaps
+## Keymaps
 
-### 🔍 Telescope
+### Telescope
 | Mapping | Action |
 |---------|--------|
 | `<leader>sf` | Find files |
@@ -54,14 +54,14 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 | `<leader>s.` | Recent files |
 | `<leader><leader>` | Buffers |
 
-### 🗂️ NvimTree
+### NvimTree
 | Mapping | Action |
 |---------|--------|
 | `<leader>n` | Toggle tree |
 | `<leader>nf` | Find file |
 | `<leader>nr` | Refresh tree |
 
-### 🧪 LSP
+### LSP
 | Mapping | Action |
 |---------|--------|
 | `gd`, `gD`, `gi`, `gr` | Navigate to definition/declaration/etc. |
@@ -72,11 +72,11 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 | `[d`, `]d` | Diagnostics navigation |
 | `<leader>e`, `<leader>q` | Show diagnostics / loclist |
 
-### 🧹 Format on Save
+### Format on Save
 - Via `conform.nvim`
 - Supports: `lua`, `python (black, isort)`, `terraform`, `tex`
 
-### 🧾 Git
+### Git
 | Mapping | Action |
 |---------|--------|
 | `<leader>gc` | Git commits |
@@ -86,7 +86,7 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 | `[h`, `]h` | Next/Prev hunk |
 | `<leader>gp`, `<leader>gs`, `<leader>gr` | Preview, stage, reset hunk |
 
-### 🖥️ ToggleTerm + Terraform
+### ToggleTerm + Terraform
 | Mapping | Action |
 |---------|--------|
 | `<leader>tt` | Toggle terminal |
@@ -95,22 +95,27 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
 | `<leader>tf` | `terraform fmt` |
 | `<leader>tl` | `tflint` |
 
-### 🤖 Copilot
+### Copilot
 | Mapping | Action |
 |---------|--------|
 | `<C-j>` | Accept suggestion |
 | `<M-]>`, `<M-[>` | Next/Prev suggestion |
 | `<C-]>` | Dismiss suggestion |
 
+### Markdown Preview
+| Mapping | Action |
+|---------|--------|
+| `<leader>mp` | Toggle Markdown preview |
+
 ---
 
-## 🐍 Python
+## Python
 
 - Python host set to: `~/.pyenv/versions/nvim-python/bin/python`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 ~/.config/nvim/
@@ -128,7 +133,6 @@ This is a modular Neovim configuration based on **Kickstart.nvim** and managed w
             ├── python.lua
             ├── toggleterm.lua
             ├── treesitter.lua
-            └── vimtex.lua
-```
+            ├── vimtex.lua
+            └── markdown-preview.lua
 
----
