@@ -4,4 +4,8 @@ test.sh
 nvim
 
 spell/
+<<<<<<< HEAD
 
+=======
+lazy-lock.json
+>>>>>>> upstream/master

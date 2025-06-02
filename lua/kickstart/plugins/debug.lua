@@ -18,7 +18,11 @@ return {
     'nvim-neotest/nvim-nio',
 
     -- Installs the debug adapters for you
+<<<<<<< HEAD
     'williamboman/mason.nvim',
+=======
+    'mason-org/mason.nvim',
+>>>>>>> upstream/master
     'jay-babu/mason-nvim-dap.nvim',
 
     -- Add your own debuggers here
